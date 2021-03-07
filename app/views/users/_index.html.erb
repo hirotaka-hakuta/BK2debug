@@ -18,15 +18,14 @@
 
           <td>
  
-            <%= link_to user_relationships_path(user.id), method: :delete do %>
+            <%= link_to user_relationships_path(user.id),class: 'btn btn-primary',method: :delete do %>
               フォローを外す
             <% end %>
           </td>
           <% else %>
           <td>
-            <%=current_user.following?(user)%>
 
-            <%= link_to user_relationships_path(user.id), method: :post do %>
+            <%= link_to user_relationships_path(user.id),class: 'btn btn-primary', method: :post do %>
  
               フォローする
             <% end %>
