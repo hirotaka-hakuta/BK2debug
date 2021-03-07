@@ -1,0 +1,15 @@
+
+[1mFrom:[0m /home/ec2-user/environment/bookers2-debug-master/app/views/users/_index.html.erb:25 ActionView::CompiledTemplates#_app_views_users__index_html_erb___4205680432629976700_69940666424300:
+
+    [1;34m20[0m:           </td>
+    [1;34m21[0m:           <% else %>
+    [1;34m22[0m:           <td>
+    [1;34m23[0m:             <%= link_to user_relationships_path(user), method: :post do %>
+    [1;34m24[0m:         <% binding.pry %>
+ => [1;34m25[0m:               フォローする
+    [1;34m26[0m:             <% end %>
+    [1;34m27[0m:           </td>
+    [1;34m28[0m:         <% end %>
+    [1;34m29[0m:         <td><%= link_to 'Show', user_path(user), class: "user_#{user.id}" %></td>
+    [1;34m30[0m:       </tr>
+
