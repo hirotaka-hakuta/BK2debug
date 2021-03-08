@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   devise_for :users
 
   get 'home/about' => 'homes#about'
+  get 'search' => 'searchs#search'
   get "users/followerindex/:id"=>"users#followerindex" ,as: "followerindex"
   get "users/followedindex/:id"=>"users#followedindex" ,as: "followedindex"
   
